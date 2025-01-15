@@ -1,0 +1,379 @@
+/********** Template CSS **********/
+:root {
+  --primary: #00B87B;
+  --secondary: #314355;
+  --light: #F2F2F2;
+  --dark: #2C3E50;
+}
+:root {
+  --background-default: #d3d3d3; /* Light Gray Background for page */
+  --section-bg: #d3d3d3; /* Light Gray Background for sections */
+  --text-black: #000000; /* Black text color */
+  --text-white: #FFFFFF; /* White text color */
+}
+
+body {
+  background: var(--background-default); /* Light Gray for the entire page */
+  color: var(--text-black); /* Default text color */
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  transition: background 0.5s ease, color 0.5s ease;
+}
+
+/* Section Styling */
+section {
+  background: var(--section-bg); /* Light Gray Background for sections */
+  margin: 20px;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  transition: background 0.5s ease, color 0.5s ease;
+}
+
+/* Home Section Text */
+.home-section h1,
+.home-section h3,
+.home-section .roles {
+  color: var(--text-white); /* White text for roles like Web Developer */
+}
+
+.home-section a {
+  color: var(--text-black); /* Black text for links like Download CV */
+}
+
+/* About Section Text */
+.about-section p,
+.about-section .stats h5,
+.about-section h5 {
+  color: var(--text-white); /* White text for About Me paragraph and stats */
+}
+
+.about-section .stats .stat {
+  color: var(--text-white);
+  font-weight: bold;
+}
+
+/* Service Section */
+.service-item {
+  background: var(--section-bg); /* Light Gray Background */
+  color: var(--text-black); /* Black text for service description */
+}
+
+.service-item p {
+  color: var(--text-white); /* White text for service description */
+}
+
+/* Contact Form Labels */
+.contact-form label {
+  color: var(--text-white); /* White text for contact form labels */
+}
+/* Contact Section Styles */
+
+#contact .form-floating {
+    margin-bottom: 15px;
+}
+
+/* Dark Gray Background for Input Fields and Textarea */
+#contact input,
+#contact textarea {
+    background-color: #2C3E50; /* Dark gray background for input fields and textarea */
+    color: #fff; /* White text inside input fields */
+    border: 1px solid #ccc;
+    padding: 12px;
+    font-size: 1rem;
+    width: 100%;
+}
+
+#contact textarea {
+    resize: none;
+}
+
+/* Label Background and Text Color */
+#contact label {
+    background-color: #2C3E50; /* Dark gray background for labels */
+    color: #fff; /* White text for labels */
+    padding: 5px 10px; /* Padding around label text */
+    border-radius: 5px; /* Rounded corners for labels */
+}
+
+/* Button Styling */
+#contact button {
+    background-color: #28a745; /* Green background for the button */
+    border: none;
+    color: #fff;
+    padding: 12px 25px;
+    font-size: 1.1rem;
+    width: 100%;
+    cursor: pointer;
+}
+
+#contact button:hover {
+    background-color: #218838; /* Darker green on hover */
+}
+
+
+/* Text color for the typed-text div */
+.typed-text {
+  color: #000000; /* Black text color */
+}
+
+/* Text color for the links inside the div */
+.d-flex .btn {
+  color: #000000; /* Black text color */
+}
+
+/* Optional: Text color on hover for the buttons */
+.d-flex .btn:hover {
+  color: #000000; /* Ensure hover state remains black */
+}
+/* Text color for the typed-text div */
+.typed-text {
+  color: #000000; /* Black text color */
+}
+/* For the text inside the .d-flex divs */
+.d-flex p, 
+.d-flex h5 {
+  color: #FFFFFF; /* White text color */
+}
+
+/* If you want to change the number (h1) text color as well */
+.d-flex h1 {
+  color: #FFFFFF; /* White text color */
+}
+/* For the text in skill section (p tags inside d-flex) */
+section .skill p {
+  color: #000000; /* Black text color */
+}
+
+/* For the title (h1 tag) */
+section .title {
+  color: #000000; /* Black text color */
+}
+
+/* For the text inside input fields and labels */
+.form-floating label {
+  color: #ffffff; /* White text color for labels */
+}
+
+/* For the text inside input fields */
+.form-control {
+  color: #ffffff; /* White text color for input text */
+}
+
+/* For the background color of the input fields */
+.bg-secondary {
+  background-color: #2c3e50 !important; /* Dark background for input fields */
+}
+
+
+#spinner {
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity .5s ease-out, visibility 0s linear .5s;
+  z-index: 99999;
+}
+
+#spinner.show {
+  transition: opacity .5s ease-out, visibility 0s linear 0s;
+  visibility: visible;
+  opacity: 1;
+}
+
+@media (max-width: 991.98px) {
+  .sticky-lg-top.vh-100 {
+    height: 100% !important;
+  }
+}
+
+.fw-semi-bold {
+  font-weight: 600;
+}
+
+.fw-medium {
+  font-weight: 500;
+}
+
+.btn-square {
+  width: 40px;
+  height: 40px;
+}
+
+.btn-sm-square {
+  width: 30px;
+  height: 30px;
+}
+
+.btn-lg-square {
+  width: 50px;
+  height: 50px;
+}
+
+.btn-square,
+.btn-sm-square,
+.btn-lg-square {
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.btn.btn-primary {
+  color: #FFFFFF;
+}
+
+.typed-cursor {
+  font-size: 25px;
+  color: var(--light);
+}
+
+.back-to-top {
+  position: fixed;
+  display: none;
+  width: 30px;
+  height: 30px;
+  text-align: center;
+  line-height: 1;
+  font-size: 30px;
+  right: 30px;
+  bottom: 30px;
+  transition: background 0.5s;
+  z-index: 11;
+}
+
+.back-to-top i {
+  color: var(--primary);
+}
+
+.back-to-top i:hover {
+  color: var(--dark);
+}
+
+.back-to-top {
+  -webkit-animation: action 1s infinite alternate;
+  animation: action 1s infinite alternate;
+}
+
+@-webkit-keyframes action {
+  0% {
+    transform: translateY(0);
+  }
+
+  100% {
+    transform: translateY(-15px);
+  }
+}
+
+@keyframes action {
+  0% {
+    transform: translateY(0);
+  }
+
+  100% {
+    transform: translateY(-15px);
+  }
+}
+
+.title {
+  position: relative;
+}
+
+.title::before {
+  position: absolute;
+  content: "";
+  width: 10px;
+  height: 10px;
+  bottom: -4px;
+  left: 0;
+  border: 2px solid var(--light);
+  border-radius: 10px;
+}
+
+.title::after {
+  position: absolute;
+  content: "";
+  width: 50px;
+  height: 2px;
+  bottom: 0;
+  left: 15px;
+  border-radius: 2px;
+  background: var(--light);
+}
+
+.progress {
+  height: 5px;
+}
+
+.progress .progress-bar {
+  width: 0px;
+  transition: 2s;
+}
+
+.service-item {
+  padding: 30px;
+  text-align: center;
+  background: var(--secondary);
+}
+
+.service-item i {
+  width: 75px;
+  height: 75px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--light);
+  color: var(--primary);
+  transition: .5s;
+}
+
+.service-item:hover i {
+  background: var(--primary);
+  color: var(--light);
+}
+
+.portfolio-item .portfolio-btn {
+  position: absolute;
+  width: 0;
+  height: 0;
+  top: 50%;
+  left: 50%;
+  font-size: 90px;
+  background: rgba(44, 62, 80, .9);
+  opacity: 0;
+  transition: .5s;
+}
+
+.portfolio-item:hover .portfolio-btn {
+  opacity: 1;
+  width: calc(100% - 60px);
+  height: calc(100% - 60px);
+  top: 30px;
+  left: 30px;
+}
+
+.portfolio-item i {
+  opacity: 0;
+  transition: .3s;
+  transition-delay: .3s;
+}
+
+.portfolio-item:hover i {
+  opacity: 1;
+}
+
+.testimonial-carousel .owl-dots {
+  margin-top: 25px;
+  text-align: center;
+}
+
+.testimonial-carousel .owl-dot {
+  display: inline-block;
+  margin: 0 5px;
+  width: 15px;
+  height: 15px;
+  background: var(--light);
+}
+
+.testimonial-carousel .owl-dot.active {
+  background: var(--primary);
+}
